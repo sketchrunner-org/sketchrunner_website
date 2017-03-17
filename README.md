@@ -1,4 +1,4 @@
-# Sketch Runner website
+# Sketch Runner website 🏃🔥
 A serverless React application deployed to [Github Pages](https://pages.github.com/).
 
 ## Technologies
@@ -29,4 +29,4 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 
 3. Start with: `npm start`
 
-> Check package.json for the full list of scripts including testing, linting & random wizardry
+> Check package.json for the full list of scripts including testing, linting & other wizardry
