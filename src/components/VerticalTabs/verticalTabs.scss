@@ -1,0 +1,53 @@
+.documentation{
+  max-width: 700px;
+  min-height: 100%;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  dl {
+    > dt,
+    > dd > * {
+      margin: 0;
+      padding: 1em;
+    }
+
+    > dt {
+      position: relative;
+      float: left;
+      clear: both;
+      z-index: 1;
+      margin-top: -1px;
+      font-weight: bold;
+      background-color: white;
+      border: 1px solid #ddd;
+      transition: .3s;
+      cursor: pointer;
+      width: 30%;
+    }
+
+    > dd {
+      height: auto;
+      margin: 0;
+      margin-top: -2px;
+      line-height: 1.7;
+      color: #666;
+      border: 1px solid #ddd;
+      transition: .4s;
+      overflow: hidden;
+      position: absolute;
+      opacity: 0;
+      display: none;
+      margin-left: 30%;
+      width: 70%;
+    }
+
+    > dt.is-opened {
+      background-color: #eee;
+    }
+
+    > dt.is-opened + dd {
+      opacity: 1;
+      display: block;
+    }
+  }
+}

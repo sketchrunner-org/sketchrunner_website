@@ -1,0 +1,29 @@
+.homeSection {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  background: white;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.homeSection-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 90%;
+  h2 {
+    margin: 0;
+    max-width: 700px;
+  }
+  p {
+    max-width: 600px;
+  }
+  img {
+    margin-top: 50px;
+    max-width: 90vw;
+    transform: translateZ(0.1px);
+  }
+}
