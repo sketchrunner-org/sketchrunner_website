@@ -34,13 +34,13 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 
 ## What's in it?
 
-[x] Accordion
-[x] Modal
-[x] Carousel
-[x] VerticalTabs
-[x] Navigation (uses Headroom component for an easy sticky header behaviour)
-[x] ProgressButtons
-[] Hero (half baked, no props 😬)
-[] Footer (half baked, needs fixes)
-[] GoogleAnalytics
-[] …
+- [x] Accordion
+- [x] Modal
+- [x] Carousel
+- [x] VerticalTabs
+- [x] Navigation (uses Headroom for an easy sticky header)
+- [x] ProgressButtons
+- [] Hero (half baked, needs fixes)
+- [] Footer (half baked, needs fixes)
+- [] GoogleAnalytics
+- [] …
