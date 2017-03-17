@@ -1,5 +1,5 @@
-# React pages boilerplate
-This boilerplate introduces a simple way for developing serverless React applications, which are perfect for serving from [Github Pages](https://pages.github.com/).
+# Sketch Runner website
+A serverless React application deployed to [Github Pages](https://pages.github.com/).
 
 ## Technologies
 * [Yarn](https://yarnpkg.com/) as package manager, [npm](https://www.npmjs.com/) is fine too
@@ -19,3 +19,14 @@ This boilerplate introduces a simple way for developing serverless React applica
 * [React Router Redux](https://github.com/reactjs/react-router-redux)
 * [Redux Actions](https://github.com/acdlite/redux-actions)
 * [Axios](https://github.com/mzabriskie/axios)
+
+
+## Usage
+
+Clone this: `git clone https://github.com/sketchrunner/sketchrunner_website.git`
+Install that: `npm install`
+Start with: `npm start`
+Build with: `npm run pages:build`
+Deploy with: `npm run pages:deploy`
+
+> Check package.json for the full list of scripts including testing, linting & random wizardry
