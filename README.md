@@ -24,9 +24,14 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 ## Usage
 
 Clone this: `git clone https://github.com/sketchrunner/sketchrunner_website.git`
+
 Install that: `npm install`
+
 Start with: `npm start`
+
 Build with: `npm run pages:build`
+
 Deploy with: `npm run pages:deploy`
+
 
 > Check package.json for the full list of scripts including testing, linting & random wizardry
