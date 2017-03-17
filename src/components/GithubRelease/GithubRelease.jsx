@@ -2,8 +2,8 @@ import React, { Component, Children, PropTypes } from 'react';
 import './githubRelease.scss';
 import axios from 'axios';
 
-const token = '?access_token=25d154b009014c74cd3b51fe7d74aaca59e5e099';
-const url = 'https://api.github.com/repos/sketchrunner/sketchrunner_releases/releases' + token;
+// const token = '?access_token=25d154b009014c74cd3b51fe7d74aaca59e5e099';
+const url = 'https://api.github.com/repos/sketchrunner/sketchrunner_releases/releases'; // + token;
 
 export default class GithubRelease extends Component {
 
