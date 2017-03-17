@@ -17,6 +17,7 @@ export default class Navigation extends Component {
           </Link>
           <div className="navigation">
             {/* <Link activeClassName="active" to="/">Home</Link> */}
+            {/* <Link activeClassName="active" to="/releases">Releases</Link> */}
             <Link activeClassName="active" to="/developers">Developers</Link>
             <Link activeClassName="active" to="/help">FAQ</Link>
             <Link activeClassName="active" to="/about">About</Link>

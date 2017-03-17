@@ -8,32 +8,32 @@ const IndexPage = () => (
     <HomeSection>
       <h2>headline h2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn.</p>
-    <img src="http://placehold.it/700x400/AAA/AAA" alt=""/>
+      <img src="https://placehold.it/700x400/AAA/AAA" alt=""/>
     </HomeSection>
     <HomeSection>
       <h2>headline h2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn.</p>
-    <img src="http://placehold.it/700x400/AAA/AAA" alt=""/>
+      <img src="https://placehold.it/700x400/AAA/AAA" alt=""/>
     </HomeSection>
     <HomeSection>
       <h2>headline h2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn.</p>
-    <img src="http://placehold.it/700x400/AAA/AAA" alt=""/>
+      <img src="https://placehold.it/700x400/AAA/AAA" alt=""/>
     </HomeSection>
     <HomeSection>
       <h2>headline h2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn.</p>
-    <img src="http://placehold.it/700x400/AAA/AAA" alt=""/>
+      <img src="https://placehold.it/700x400/AAA/AAA" alt=""/>
     </HomeSection>
     <HomeSection>
       <h2>headline h2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn.</p>
-      <img src="http://placehold.it/700x400/AAA/AAA" alt=""/>
+      <img src="https://placehold.it/700x400/AAA/AAA" alt=""/>
     </HomeSection>
     <HomeSection>
       <h2>headline h2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn.</p>
-      <img src="http://placehold.it/700x400/AAA/AAA" alt=""/>
+      <img src="https://placehold.it/700x400/AAA/AAA" alt=""/>
     </HomeSection>
     <Carousel className="slider" indicator={true} switcher={true}>
       <div>

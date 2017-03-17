@@ -14,6 +14,8 @@ export default class Hero extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
+  
+
   handleClick () {
     this.setState({buttonState: 'loading'})
     setTimeout(() => {

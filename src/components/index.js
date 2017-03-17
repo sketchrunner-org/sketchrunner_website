@@ -9,3 +9,4 @@ export Carousel from './Carousel/Carousel';
 export Modal from './Modal/Modal';
 export VerticalTabs from './VerticalTabs/VerticalTabs';
 export Footer from './Footer/Footer';
+export GithubRelease from './GithubRelease/GithubRelease';
