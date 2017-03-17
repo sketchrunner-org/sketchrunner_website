@@ -6,6 +6,7 @@ import { IndexPage } from 'pages';
 import { DevelopersPage } from 'pages';
 import { HelpPage } from 'pages';
 import { AboutPage } from 'pages';
+import { ReleasesPage } from 'pages';
 import { App } from 'components';
 
 const AppRouter = ({ history }) => (
@@ -21,6 +22,9 @@ const AppRouter = ({ history }) => (
     </Route>
     <Route path="/about" component={App}>
       <IndexRoute component={AboutPage} />
+    </Route>
+    <Route path="/releases" component={App}>
+      <IndexRoute component={ReleasesPage} />
     </Route>
   </HotRouter>
 );
