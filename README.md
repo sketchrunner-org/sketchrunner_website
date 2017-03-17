@@ -44,4 +44,5 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 - [ ] Hero (half baked, needs fixes)
 - [ ] Footer (half baked, needs fixes)
 - [ ] GoogleAnalytics
+- [ ] Vimeo
 - [ ] …
