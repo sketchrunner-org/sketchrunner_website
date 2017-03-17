@@ -30,3 +30,17 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 3. Start with: `npm start`
 
 > Check package.json for the full list of scripts including testing, linting & other wizardry
+
+
+## What's in it?
+
+[x] Accordion
+[x] Modal
+[x] Carousel
+[x] VerticalTabs
+[x] Navigation (uses Headroom component for an easy sticky header behaviour)
+[x] ProgressButtons
+[] Hero (half baked, no props 😬)
+[] Footer (half baked, needs fixes)
+[] GoogleAnalytics
+[] …
