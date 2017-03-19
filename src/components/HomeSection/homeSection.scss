@@ -20,10 +20,16 @@
   }
   p {
     max-width: 600px;
+    margin: 0 auto;
   }
-  img {
+  .image-wrapper, .video-wrapper {
     margin-top: 50px;
     max-width: 90vw;
-    transform: translateZ(0.1px);
+    img,
+    > div > iframe,
+    > div > video {
+      width: 100%;
+      // transform: translateZ(0.1px); //IDEA: CSS only parallax effect – related with TODO in main.scss
+    }
   }
 }

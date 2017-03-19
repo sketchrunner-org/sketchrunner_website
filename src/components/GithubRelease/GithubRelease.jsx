@@ -23,7 +23,7 @@ export default class GithubRelease extends Component {
 		var self = this;
 		axios.get(url)
 		.then(function(response){
-			for (var i = 0; i <= response.data.length ; i++) {
+			for (var i = 0; i <= response.data.length ; i++) { // TODO: This throws an error, it must be something really basic but I can't figure it out -.-
 					var releases = self.state.releases.slice();
 					self.setState({ releases: releases });
 					releases.push(
