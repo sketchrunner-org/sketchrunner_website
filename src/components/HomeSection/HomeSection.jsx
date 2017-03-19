@@ -30,7 +30,16 @@ export default class homeSection extends Component {
           { content[0] }
           { content[1] }
           <div className="video-wrapper">
-            <ReactPlayer url={ content[2].props.src } className="video-player" width="100%" height="100%" playing={false} />
+            <ReactPlayer
+              url={ content[2].props.src }
+              className="video-player"
+              width="100%"
+              height="100%"
+              playing={false}
+              vimeoConfig={{ attributes: { preload: true } }}
+              // TODO Add custom posters for videos (to be also used as fallback images) 👇 This is supposed to work: https://github.com/CookPete/react-player/issues/62
+              fileConfig={{ attributes: { poster: 'https://placehold.it/100x100/' } }}
+            />
           </div>
         </div>
        )
@@ -47,13 +56,6 @@ export default class homeSection extends Component {
     </div>
   );
   }
-  // return (
-  //   <div className="homeSection">
-  //     <div className="homeSection-content">
-  //     {children}
-  //     </div>
-  //   </div>
-  // );
 }
 
 
