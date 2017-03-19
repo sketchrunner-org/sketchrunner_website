@@ -30,7 +30,7 @@ export default class homeSection extends Component {
           { content[0] }
           { content[1] }
           <div className="video-wrapper">
-            <ReactPlayer url={ content[2].props.src } playing={false} />
+            <ReactPlayer url={ content[2].props.src } className="video-player" width="100%" height="100%" playing={false} />
           </div>
         </div>
        )
