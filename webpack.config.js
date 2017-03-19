@@ -143,7 +143,7 @@ module.exports = {
   module: { loaders },
   plugins: production ? productionPlugins : developmentPlugins,
 
-  // CHANGED: is it okay to not load these with webpack and add them via @import in styles/index.js ?
-  // sassResources: ['./src/styles/variables.scss', './src/styles/mixins.scss'],
+  // TODO: I'm not sure which stylesheets should be added here (all of them, global only, just when needed prefixing?)
+  sassResources: ['./src/styles/variables.scss', './src/styles/mixins.scss', './src/styles/buttons.scss'],
   postcss: [autoprefixer({ browsers: ['last 4 versions'] })],
 };
