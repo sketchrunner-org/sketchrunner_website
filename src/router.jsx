@@ -9,22 +9,30 @@ import { AboutPage } from 'pages';
 import { ReleasesPage } from 'pages';
 import { App } from 'components';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-93978918-1'); // TODO: create "constants" file to add this type of keys
+
+function logPageView() {
+  ReactGA.set({ page: window.location.hash });
+  ReactGA.pageview(window.location.hash);
+}
+
 const AppRouter = ({ history }) => (
   <HotRouter history={history}>
     <Route path="/" component={App}>
-      <IndexRoute component={IndexPage} />
+      <IndexRoute component={IndexPage} onEnter={logPageView}/>
     </Route>
     <Route path="/developers" component={App}>
-      <IndexRoute component={DevelopersPage} />
+      <IndexRoute component={DevelopersPage} onEnter={logPageView} />
     </Route>
     <Route path="/help" component={App}>
-      <IndexRoute component={HelpPage} />
+      <IndexRoute component={HelpPage} onEnter={logPageView} />
     </Route>
     <Route path="/about" component={App}>
-      <IndexRoute component={AboutPage} />
+      <IndexRoute component={AboutPage} onEnter={logPageView} />
     </Route>
     <Route path="/releases" component={App}>
-      <IndexRoute component={ReleasesPage} />
+      <IndexRoute component={ReleasesPage} onEnter={logPageView} />
     </Route>
   </HotRouter>
 );

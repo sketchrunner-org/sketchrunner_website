@@ -15,6 +15,7 @@ const store = configureStore();
 const appHistory = syncHistoryWithStore(hashHistory, store);
 const rootElement = document.getElementById('app');
 
+
 render(
   <AppContainer>
     <Provider store={store}>
@@ -27,7 +28,6 @@ render(
 if (module.hot) {
   module.hot.accept('./router', () => {
     const NextAppRouter = require('./router').default;
-
     render(
       <AppContainer>
         <Provider store={store}>
