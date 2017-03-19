@@ -2,7 +2,6 @@ import React, { PropTypes, Component } from 'react';
 import ReactPlayer from 'react-player'
 import './homeSection.scss';
 
-// export default function homeSection({ children }) {
 export default class homeSection extends Component {
 	constructor (props) {
     super(props)
