@@ -42,7 +42,7 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 - [x] Navigation (uses Headroom for an easy sticky header)
 - [x] ProgressButtons
 - [x] Vimeo (uses ReactPlayer component)
+- [x] GoogleAnalytics
 - [ ] Hero (half baked, needs fixes)
 - [ ] Footer (half baked, needs fixes)
-- [ ] GoogleAnalytics
 - [ ] …
