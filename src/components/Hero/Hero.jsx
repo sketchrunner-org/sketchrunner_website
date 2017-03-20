@@ -19,7 +19,6 @@ export default class Hero extends Component {
 
 
   handleClick () {
-    ReactGA.set({ page: window.location.hash });
     ReactGA.event({
       category: 'Plugin downloads',
       action: 'Download from Hero button'
