@@ -7,6 +7,7 @@ import { DevelopersPage } from 'pages';
 import { HelpPage } from 'pages';
 import { AboutPage } from 'pages';
 import { ReleasesPage } from 'pages';
+import { SignupPage } from 'pages';
 import { App } from 'components';
 
 import ReactGA from 'react-ga';
@@ -33,6 +34,9 @@ const AppRouter = ({ history }) => (
     </Route>
     <Route path="/releases" component={App}>
       <IndexRoute component={ReleasesPage} onEnter={logPageView} />
+    </Route>
+    <Route path="/signup" component={App}>
+      <IndexRoute component={SignupPage} onEnter={logPageView} />
     </Route>
   </HotRouter>
 );
