@@ -16,7 +16,7 @@ export default class VerticalTabs extends Component {
       const content = title.nextElementSibling
       title.addEventListener('click', () => {
         const titles = this.dl.querySelectorAll('dt')
-        console.log(titles, this);
+        // console.log(titles, this);
         for (var i = 0; i < titles.length; i++) {
           titles[i].classList.remove('is-opened')
         }

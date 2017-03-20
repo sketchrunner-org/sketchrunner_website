@@ -1,8 +1,10 @@
 import React, { PropTypes } from 'react';
 import { Component } from 'react';
 import ProgressButton from 'react-progress-button';
+import ReactGA from 'react-ga';
 import Modal from '../Modal/Modal';
 import './hero.scss';
+
 
 export default class Hero extends Component {
 
@@ -14,13 +16,18 @@ export default class Hero extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-  
+
 
   handleClick () {
+    ReactGA.set({ page: window.location.hash });
+    ReactGA.event({
+      category: 'Plugin downloads',
+      action: 'Download from Hero button'
+    });
     this.setState({buttonState: 'loading'})
     setTimeout(() => {
       this.setState({buttonState: 'success'})
-    }, 3000)
+    }, 2000)
   }
 
   render() {
