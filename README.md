@@ -43,6 +43,7 @@ A serverless React application deployed to [Github Pages](https://pages.github.c
 - [x] ProgressButtons
 - [x] Vimeo (uses ReactPlayer component)
 - [x] GoogleAnalytics
+- [x] Firebase (wip)
 - [ ] Hero (half baked, needs fixes)
 - [ ] Footer (half baked, needs fixes)
 - [ ] …
