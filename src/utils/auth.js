@@ -13,15 +13,7 @@ export const firebaseAuth = firebase.auth
 export function auth (email, pw) {
   return firebaseAuth().createUserWithEmailAndPassword(email, pw)
     .then(saveUser)
-    .catch((error) => console.log('Oops', error))
-}
-
-export function logout () {
-  return firebaseAuth().signOut()
-}
-
-export function login (email, pw) {
-  return firebaseAuth().signInWithEmailAndPassword(email, pw)
+    .catch((error) => console.log('Oops ❌', error))
 }
 
 export function saveUser (user) {
@@ -31,5 +23,13 @@ export function saveUser (user) {
       uid: user.uid
     })
     .then(() => user)
-    .then(console.log('yeeey'))
+    .then(console.log('User signed up ✅'))
+}
+
+export function logout () {
+  return firebaseAuth().signOut()
+}
+
+export function login (email, pw) {
+  return firebaseAuth().signInWithEmailAndPassword(email, pw)
 }

@@ -1,9 +1,39 @@
 import React, { Component } from 'react'
 import firebase from 'firebase'
-import { auth } from '../../utils/auth'
+import { auth, firebaseAuth } from '../../utils/auth'
+
 import './register.scss'
 
+function setErrorMsg(error) {
+  return {
+    registerError: error.message
+  }
+}
+
+
+
 export default class Register extends Component {
+  state = {
+    authed: false,
+    loading: true,
+  }
+  componentDidMount () {
+    this.removeListener = firebaseAuth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({
+          authed: true,
+          loading: false,
+        })
+      } else {
+        this.setState({
+          loading: false
+        })
+      }
+    })
+  }
+  componentWillUnmount () {
+    this.removeListener()
+  }
 
   handleSubmit = (e) => {
     e.preventDefault()
