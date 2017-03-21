@@ -2,6 +2,7 @@ import { Children, createElement } from 'react';
 import { Router } from 'react-router';
 
 export default class HotRouter extends Router {
+
   componentWillReceiveProps(nextProps) {
     const components = [];
     function grabComponents(element) {

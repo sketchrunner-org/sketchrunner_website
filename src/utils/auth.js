@@ -1,4 +1,6 @@
-import firebase from 'firebase'
+import firebase from 'firebase';
+import {browserHistory} from 'react-router';
+
 const config = {
   apiKey: "AIzaSyB6UQS2-k79PYnLK8GBAaS0m_h49Hpskow",
   authDomain: "runner-aba33.firebaseapp.com",
@@ -24,6 +26,9 @@ export function saveUser (user) {
     })
     .then(() => user)
     .then(console.log('User signed up ✅'))
+    .then(browserHistory.push('/')) // TODO: weird, goBack() works but push('/path') doesn't – probably something to do with react-router-redux & the middlewares 🤔
+    .then(history.go(0)) // 👈 soft reload the page with the added path
+    // .then(window.location = "http://www.google.com") // <-- yeah obviously that works but that's a noNO
 }
 
 export function logout () {
