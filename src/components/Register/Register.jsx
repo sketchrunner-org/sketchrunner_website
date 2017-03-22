@@ -39,10 +39,10 @@ export default class Register extends Component {
       }
     })
   }
+
   componentWillUnmount () {
     this.removeListener()
   }
-
 
 
   handleSubmit = (e) => {
@@ -69,7 +69,7 @@ export default class Register extends Component {
             <input type="password" className="form-control" placeholder="Password" ref={(pw) => this.pw = pw} />
           </div>
           <ProgressButton
-            durationSuccess={2000}
+            durationSuccess={1000}
             onClick={this.handleSubmit}
             state={this.state.buttonState}>
             Submit
