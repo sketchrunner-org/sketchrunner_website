@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactLogo, Navigation, Hero, HomeSection, Carousel, Footer } from 'components';
+import TweetEmbed from 'react-tweet-embed';
 
 const IndexPage = () => (
   <div className="index-page">
@@ -37,12 +38,10 @@ const IndexPage = () => (
     </HomeSection>
     <Carousel className="slider" indicator={true} switcher={true}>
       <div>
-        <h3>Headline 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <TweetEmbed id='852599584740171776'></TweetEmbed>
       </div>
       <div>
-        <h3>Headline 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <TweetEmbed id='843956540562325504'></TweetEmbed>
       </div>
       <div>
         <h3>Headline 3</h3>

@@ -11,3 +11,4 @@ export VerticalTabs from './VerticalTabs/VerticalTabs';
 export Footer from './Footer/Footer';
 export GithubRelease from './GithubRelease/GithubRelease';
 export Register from './Register/Register';
+export Testimonials from './Testimonials/Testimonials';
